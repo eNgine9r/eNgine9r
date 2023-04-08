@@ -4,14 +4,9 @@
 <table>
   <tr>
     <td colspan="1" align="center">
-      <img src="https://github.com/lowlighter/metrics/blob/examples/metrics.plugin.isocalendar.fullyear.svg" alt=""></img>
-      <img align="center" src="/github-metrics.svg" alt="Metrics" width="400">
-    </td>
-  </tr>
-  <tr>
-    <td colspan="1" align="center">
-       <img src="https://github.com/lowlighter/metrics/blob/examples/metrics.plugin.achievements.compact.svg" alt=""></img>
+      <img align="center" src="/github-metrics.svg" alt="Metrics" width="400"></img>
     </td>
   </tr>
 </table>
 
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=eNgine9r&theme=dracula&hide_border=true&fire=EB5454&background=45%2CEB5454%2C3C00EB&border=EB3756)](https://git.io/streak-stats)
