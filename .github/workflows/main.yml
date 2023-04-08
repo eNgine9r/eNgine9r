@@ -13,10 +13,12 @@ jobs:
       contents: write
     steps:
       - uses: lowlighter/metrics@latest
+        name: Example
         with:
-          filename: metrics.plugin.isocalendar.fullyear.svg, metrics.plugin.achievements.compact.svg
+          filename: metrics.classic.svg, metrics.plugin.isocalendar.fullyear.svg, metrics.plugin.achievements.compact.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
+          base: header, repositories
+          plugin_lines: yes
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
           plugin_achievements: yes
