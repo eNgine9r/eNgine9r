@@ -12,7 +12,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: eNgine9r/metrics@latest
         with:
           filename: metrics.plugin.isocalendar.fullyear.svg, metrics.plugin.achievements.compact.svg
           token: ${{ secrets.METRICS_TOKEN }}
