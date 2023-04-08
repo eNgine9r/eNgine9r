@@ -1,41 +1,26 @@
-name: Metrics, Compact display
+name: Publish examples (presets)
 on:
-  # Schedule daily updates
-  schedule: [{cron: "0 0 * * *"}]
-  # (optional) Run workflow manually
+  schedule:
+    - cron: "0 16 1/2 * *"
   workflow_dispatch:
-  # (optional) Run workflow when pushing on master/main
-  push: {branches: ["master", "main"]}
+  workflow_call:
 jobs:
-  github-metrics:
+  examples:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    if: "github.repository == 'lowlighter/metrics'"
     steps:
-      - uses: lowlighter/metrics@latest
+      - name: Checkout repository
+        uses: actions/checkout@v3
         with:
-          filename: metrics.classic.svg, metrics.plugin.isocalendar.fullyear.svg, metrics.plugin.achievements.compact.svg
+          fetch-depth: 0
+      - name: Setup NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 17
+      - name: Setup metrics
+        run: npm ci
+      - name: Publish presets examples
+        run: npm run presets -- publish
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
           token: ${{ secrets.METRICS_TOKEN }}
-          base: header, repositories
-          plugin_lines: yes
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
-          plugin_achievements: yes
-          plugin_achievements_only: >-
-            polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
-            scripter, packager, explorer, infographile, manager
-          plugin_achievements_display: compact
-          plugin_achievements_threshold: X
-          
-          name: Compact display
-          uses: lowlighter/metrics@latest
-          with:
-            filename: metrics.plugin.achievements.compact.svg
-            token: ${{ secrets.METRICS_TOKEN }}
-            base: ""
-            plugin_achievements: yes
-            plugin_achievements_only: >-
-              polyglot, stargazer, sponsor, deployer, member, maintainer, developer,
-              scripter, packager, explorer, infographile, manager
-            plugin_achievements_display: compact
-            plugin_achievements_threshold: X
