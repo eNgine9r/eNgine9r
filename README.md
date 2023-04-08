@@ -2,4 +2,11 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&duration=2000&pause=1000&color=FF6A3F&center=true&vCenter=true&width=650&height=20&lines=Fullstack+developer+with+1%2B+year+of+experience;I+am+studying+at+the+best+IT+school+of+Ukraine+%22GOIT%22;While+you+are+reading+these+messages%2C+I+am+learning%F0%9F%98%89)](https://git.io/typing-svg)
 
 
+<img align="center" src="/github-metrics.svg" alt="Metrics" width="400">
+<picture>
+  <img src="/github-metrics.svg" alt="Metrics">
+</picture>
+<img src="/github-metrics.svg" alt="Metrics" width="100%">
+
+
 ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=eNgine9r&theme=codeSTACKr) ![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=eNgine9r&theme=codeSTACKr) ![](http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=eNgine9r&theme=codeSTACKr) ![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=eNgine9r&theme=codeSTACKr) ![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=eNgine9r&theme=codeSTACKr&utcOffset=8)
