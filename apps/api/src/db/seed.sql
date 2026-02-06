@@ -1,7 +1,7 @@
-INSERT INTO users (id, name, email)
+INSERT INTO users (id, name, email, hashed_password)
 VALUES
-  ('user_1', 'Avery Powell', 'avery@example.com'),
-  ('user_2', 'Jordan Lee', 'jordan@example.com');
+  ('user_1', 'Avery Powell', 'avery@example.com', 'seeded-salt:575bc12c7a0214ebfe610969c4121e72faede66e244754f0a036fdb0810bf8ef20e9d1e483f853febd0ddf8b4cd806f8583c3543f4ace2d338103e1204e78e12'),
+  ('user_2', 'Jordan Lee', 'jordan@example.com', 'seeded-salt:575bc12c7a0214ebfe610969c4121e72faede66e244754f0a036fdb0810bf8ef20e9d1e483f853febd0ddf8b4cd806f8583c3543f4ace2d338103e1204e78e12');
 
 INSERT INTO products (id, name, price, currency)
 VALUES
