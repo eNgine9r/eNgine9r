@@ -1,6 +1,6 @@
-const { products } = require("../db/data");
+const { fetchProducts } = require("../db/queries");
 
-const listProducts = () => products;
+const listProducts = () => fetchProducts();
 
 module.exports = {
   listProducts

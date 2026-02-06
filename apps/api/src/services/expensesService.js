@@ -1,6 +1,6 @@
-const { expenses } = require("../db/data");
+const { fetchExpenses } = require("../db/queries");
 
-const listExpenses = () => expenses;
+const listExpenses = () => fetchExpenses();
 
 module.exports = {
   listExpenses

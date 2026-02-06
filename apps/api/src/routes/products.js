@@ -3,11 +3,15 @@ const { getProducts } = require("../logic/dashboard");
 
 const router = express.Router();
 
-router.get("/products", (req, res) => {
-  const products = getProducts();
-  res.json({
-    data: products
-  });
+router.get("/products", async (req, res, next) => {
+  try {
+    const products = await getProducts();
+    res.json({
+      data: products
+    });
+  } catch (error) {
+    next(error);
+  }
 });
 
 module.exports = router;
