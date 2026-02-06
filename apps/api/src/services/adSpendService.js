@@ -1,6 +1,6 @@
-const { adSpend } = require("../db/data");
+const { fetchAdSpend } = require("../db/queries");
 
-const listAdSpend = () => adSpend;
+const listAdSpend = () => fetchAdSpend();
 
 module.exports = {
   listAdSpend

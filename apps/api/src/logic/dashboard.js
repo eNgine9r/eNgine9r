@@ -3,23 +3,30 @@ const { listProducts } = require("../services/productsService");
 const { listAdSpend } = require("../services/adSpendService");
 const { listExpenses } = require("../services/expensesService");
 const {
-  calculateRevenue,
-  calculateAdSpend,
+  fetchRevenueTotal,
+  fetchAdSpendTotal,
+  fetchFixedMonthlyExpensesTotal
+} = require("../db/queries");
+const {
   calculateFixedExpensesPerDay,
   calculateProfit,
   calculateRoas,
   calculateMarginPercent
 } = require("./metrics");
 
-const getDashboardMetrics = () => {
-  const orders = listOrders();
-  const products = listProducts();
-  const adSpend = listAdSpend();
-  const expenses = listExpenses();
+const getDashboardMetrics = async () => {
+  const [orders, products, adSpend, expenses, revenue, totalAdSpend, fixedMonthly] =
+    await Promise.all([
+      listOrders(),
+      listProducts(),
+      listAdSpend(),
+      listExpenses(),
+      fetchRevenueTotal(),
+      fetchAdSpendTotal(),
+      fetchFixedMonthlyExpensesTotal()
+    ]);
 
-  const revenue = calculateRevenue(orders);
-  const totalAdSpend = calculateAdSpend(adSpend);
-  const fixedExpensesPerDay = calculateFixedExpensesPerDay(expenses);
+  const fixedExpensesPerDay = calculateFixedExpensesPerDay(fixedMonthly);
   const profit = calculateProfit(revenue, totalAdSpend, fixedExpensesPerDay);
   const roas = calculateRoas(revenue, totalAdSpend);
   const marginPercent = calculateMarginPercent(revenue, profit);
