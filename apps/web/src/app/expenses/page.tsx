@@ -1,7 +1,7 @@
 import { ExpenseList } from '@/components/ExpenseList';
 import { MetricCard } from '@/components/MetricCard';
 import { TopBar } from '@/components/TopBar';
-import { dashboardMetrics, expensesList } from '@/lib/mock-data';
+import { dashboardMetrics, fixedExpenses, variableExpenses } from '@/lib/mock-data';
 
 export default function ExpensesPage() {
   return (
@@ -13,7 +13,10 @@ export default function ExpensesPage() {
             <MetricCard key={metric.title} {...metric} />
           ))}
         </section>
-        <ExpenseList expenses={expensesList} />
+        <section className="grid gap-6 xl:grid-cols-2">
+          <ExpenseList expenses={fixedExpenses} title="Fixed expenses" cadence="Monthly" />
+          <ExpenseList expenses={variableExpenses} title="Variable expenses" cadence="Rolling" />
+        </section>
       </div>
     </main>
   );
