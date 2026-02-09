@@ -1,7 +1,7 @@
-import { DataTable } from '@/components/DataTable';
 import { MetricCard } from '@/components/MetricCard';
+import { OrdersTable } from '@/components/OrdersTable';
 import { TopBar } from '@/components/TopBar';
-import { dashboardMetrics, ordersTable } from '@/lib/mock-data';
+import { dashboardMetrics, orders } from '@/lib/mock-data';
 
 export default function OrdersPage() {
   return (
@@ -13,7 +13,7 @@ export default function OrdersPage() {
             <MetricCard key={metric.title} {...metric} />
           ))}
         </section>
-        <DataTable title="Order activity" rows={ordersTable} />
+        <OrdersTable orders={orders} />
       </div>
     </main>
   );

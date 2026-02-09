@@ -4,6 +4,9 @@ const orders = [
     productId: "prod_1",
     quantity: 2,
     total: 240,
+    productCost: 136,
+    deliveryCost: 18,
+    adCost: 12,
     currency: "USD",
     orderedAt: "2024-05-01"
   },
@@ -12,6 +15,9 @@ const orders = [
     productId: "prod_2",
     quantity: 1,
     total: 130,
+    productCost: 72,
+    deliveryCost: 10,
+    adCost: 8,
     currency: "USD",
     orderedAt: "2024-05-02"
   },
@@ -20,6 +26,9 @@ const orders = [
     productId: "prod_3",
     quantity: 3,
     total: 315,
+    productCost: 174,
+    deliveryCost: 24,
+    adCost: 16,
     currency: "USD",
     orderedAt: "2024-05-03"
   }
@@ -30,18 +39,21 @@ const products = [
     id: "prod_1",
     name: "Starter Kit",
     price: 120,
+    costPrice: 68,
     currency: "USD"
   },
   {
     id: "prod_2",
     name: "Growth Bundle",
     price: 130,
+    costPrice: 72,
     currency: "USD"
   },
   {
     id: "prod_3",
     name: "Enterprise Pack",
     price: 105,
+    costPrice: 58,
     currency: "USD"
   }
 ];

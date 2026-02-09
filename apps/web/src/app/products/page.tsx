@@ -1,7 +1,7 @@
-import { DataTable } from '@/components/DataTable';
 import { MetricCard } from '@/components/MetricCard';
+import { ProductsTable } from '@/components/ProductsTable';
 import { TopBar } from '@/components/TopBar';
-import { dashboardMetrics, productsTable } from '@/lib/mock-data';
+import { dashboardMetrics, products } from '@/lib/mock-data';
 
 export default function ProductsPage() {
   return (
@@ -13,7 +13,7 @@ export default function ProductsPage() {
             <MetricCard key={metric.title} {...metric} />
           ))}
         </section>
-        <DataTable title="Inventory status" rows={productsTable} />
+        <ProductsTable products={products} />
       </div>
     </main>
   );

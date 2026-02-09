@@ -2,14 +2,16 @@ const { all, get } = require("../connection");
 
 const fetchOrders = () =>
   all(
-    `SELECT id, user_id as userId, product_id as productId, quantity, total, currency, ordered_at as orderedAt
+    `SELECT id, user_id as userId, product_id as productId, quantity, total, currency,
+            product_cost as productCost, delivery_cost as deliveryCost, ad_cost as adCost,
+            ordered_at as orderedAt
      FROM orders
      ORDER BY ordered_at`
   );
 
 const fetchProducts = () =>
   all(
-    `SELECT id, name, price, currency
+    `SELECT id, name, price, cost_price as costPrice, currency
      FROM products
      ORDER BY name`
   );
@@ -45,6 +47,21 @@ const fetchFixedMonthlyExpensesTotal = async () => {
   return row?.total ?? 0;
 };
 
+const fetchProductCostTotal = async () => {
+  const row = await get("SELECT COALESCE(SUM(product_cost), 0) as total FROM orders");
+  return row?.total ?? 0;
+};
+
+const fetchDeliveryCostTotal = async () => {
+  const row = await get("SELECT COALESCE(SUM(delivery_cost), 0) as total FROM orders");
+  return row?.total ?? 0;
+};
+
+const fetchOrderAdCostTotal = async () => {
+  const row = await get("SELECT COALESCE(SUM(ad_cost), 0) as total FROM orders");
+  return row?.total ?? 0;
+};
+
 module.exports = {
   fetchOrders,
   fetchProducts,
@@ -52,5 +69,8 @@ module.exports = {
   fetchExpenses,
   fetchRevenueTotal,
   fetchAdSpendTotal,
-  fetchFixedMonthlyExpensesTotal
+  fetchFixedMonthlyExpensesTotal,
+  fetchProductCostTotal,
+  fetchDeliveryCostTotal,
+  fetchOrderAdCostTotal
 };

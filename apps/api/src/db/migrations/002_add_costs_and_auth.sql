@@ -1,0 +1,16 @@
+ALTER TABLE users ADD COLUMN hashed_password TEXT;
+
+CREATE TABLE IF NOT EXISTS sessions (
+  id TEXT PRIMARY KEY,
+  user_id TEXT NOT NULL,
+  token TEXT NOT NULL UNIQUE,
+  expires_at TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT (datetime('now')),
+  FOREIGN KEY (user_id) REFERENCES users (id)
+);
+
+ALTER TABLE products ADD COLUMN cost_price REAL NOT NULL DEFAULT 0;
+
+ALTER TABLE orders ADD COLUMN product_cost REAL NOT NULL DEFAULT 0;
+ALTER TABLE orders ADD COLUMN delivery_cost REAL NOT NULL DEFAULT 0;
+ALTER TABLE orders ADD COLUMN ad_cost REAL NOT NULL DEFAULT 0;

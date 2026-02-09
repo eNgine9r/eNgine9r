@@ -3,17 +3,17 @@ VALUES
   ('user_1', 'Avery Powell', 'avery@example.com', 'seeded-salt:575bc12c7a0214ebfe610969c4121e72faede66e244754f0a036fdb0810bf8ef20e9d1e483f853febd0ddf8b4cd806f8583c3543f4ace2d338103e1204e78e12'),
   ('user_2', 'Jordan Lee', 'jordan@example.com', 'seeded-salt:575bc12c7a0214ebfe610969c4121e72faede66e244754f0a036fdb0810bf8ef20e9d1e483f853febd0ddf8b4cd806f8583c3543f4ace2d338103e1204e78e12');
 
-INSERT INTO products (id, name, price, currency)
+INSERT INTO products (id, name, price, cost_price, currency)
 VALUES
-  ('prod_1', 'Starter Kit', 120, 'USD'),
-  ('prod_2', 'Growth Bundle', 130, 'USD'),
-  ('prod_3', 'Enterprise Pack', 105, 'USD');
+  ('prod_1', 'Starter Kit', 120, 68, 'USD'),
+  ('prod_2', 'Growth Bundle', 130, 72, 'USD'),
+  ('prod_3', 'Enterprise Pack', 105, 58, 'USD');
 
-INSERT INTO orders (id, user_id, product_id, quantity, total, currency, ordered_at)
+INSERT INTO orders (id, user_id, product_id, quantity, total, currency, product_cost, delivery_cost, ad_cost, ordered_at)
 VALUES
-  ('ord_1001', 'user_1', 'prod_1', 2, 240, 'USD', '2024-05-01'),
-  ('ord_1002', 'user_2', 'prod_2', 1, 130, 'USD', '2024-05-02'),
-  ('ord_1003', 'user_1', 'prod_3', 3, 315, 'USD', '2024-05-03');
+  ('ord_1001', 'user_1', 'prod_1', 2, 240, 'USD', 136, 18, 12, '2024-05-01'),
+  ('ord_1002', 'user_2', 'prod_2', 1, 130, 'USD', 72, 10, 8, '2024-05-02'),
+  ('ord_1003', 'user_1', 'prod_3', 3, 315, 'USD', 174, 24, 16, '2024-05-03');
 
 INSERT INTO ad_spend (id, channel, amount, currency, spend_date)
 VALUES
