@@ -6,7 +6,7 @@ Monorepo with two applications:
 
 ## Live Web Version
 
-- GitHub Pages: https://engine9r.github.io/
+- GitHub Pages: https://engine9r.github.io/eNgine9r/)
 
 After each push to `main` (changes in `apps/web/**`), GitHub Actions deploys the web app automatically.
 
