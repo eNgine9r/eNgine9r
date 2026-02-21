@@ -18,7 +18,7 @@ export function TimeSeriesChart({
           <h2 className="text-lg font-semibold text-slate-900">{title}</h2>
           <p className="text-xs text-slate-400">{subtitle}</p>
         </div>
-        <span className="text-xs font-semibold text-slate-400">Last 7 days</span>
+        <span className="text-xs font-semibold text-slate-400">Останні 7 днів</span>
       </div>
       <div className="mt-6 grid grid-cols-7 items-end gap-3">
         {series.map((point) => {
@@ -29,7 +29,7 @@ export function TimeSeriesChart({
                 <div
                   className="w-full rounded-full bg-brand-500/80"
                   style={{ height }}
-                  aria-label={`${point.label} value ${point.value}`}
+                  aria-label={`${point.label} значення ${point.value}`}
                 />
               </div>
               <span className="text-[10px] font-semibold uppercase tracking-wide text-slate-400">

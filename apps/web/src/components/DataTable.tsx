@@ -1,13 +1,13 @@
 import type { TableRow } from '@/lib/mock-data';
 
 const statusClasses: Record<string, string> = {
-  Processing: 'text-amber-700 bg-amber-50',
-  Shipped: 'text-blue-700 bg-blue-50',
-  Delivered: 'text-emerald-700 bg-emerald-50',
-  Refunded: 'text-rose-700 bg-rose-50',
-  'In Stock': 'text-emerald-700 bg-emerald-50',
-  'Low Stock': 'text-amber-700 bg-amber-50',
-  Backorder: 'text-rose-700 bg-rose-50'
+  'В обробці': 'text-amber-700 bg-amber-50',
+  Відправлено: 'text-blue-700 bg-blue-50',
+  Доставлено: 'text-emerald-700 bg-emerald-50',
+  Повернено: 'text-rose-700 bg-rose-50',
+  'В наявності': 'text-emerald-700 bg-emerald-50',
+  'Мало на складі': 'text-amber-700 bg-amber-50',
+  Передзамовлення: 'text-rose-700 bg-rose-50'
 };
 
 export function DataTable({ title, rows }: { title: string; rows: TableRow[] }) {
@@ -16,7 +16,7 @@ export function DataTable({ title, rows }: { title: string; rows: TableRow[] }) 
       <div className="flex items-center justify-between">
         <h2 className="text-lg font-semibold text-slate-900">{title}</h2>
         <button className="rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-600 hover:border-slate-300">
-          View all
+          Переглянути все
         </button>
       </div>
       <div className="mt-4 overflow-hidden rounded-xl border border-slate-100">
@@ -24,9 +24,9 @@ export function DataTable({ title, rows }: { title: string; rows: TableRow[] }) 
           <thead className="bg-slate-50 text-xs uppercase tracking-wide text-slate-500">
             <tr>
               <th className="px-4 py-3">ID</th>
-              <th className="px-4 py-3">Details</th>
-              <th className="px-4 py-3">Status</th>
-              <th className="px-4 py-3 text-right">Amount</th>
+              <th className="px-4 py-3">Деталі</th>
+              <th className="px-4 py-3">Статус</th>
+              <th className="px-4 py-3 text-right">Сума</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100">

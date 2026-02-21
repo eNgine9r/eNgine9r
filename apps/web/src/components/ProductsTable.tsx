@@ -4,19 +4,19 @@ export function ProductsTable({ products }: { products: ProductRow[] }) {
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
       <div className="flex items-center justify-between">
-        <h2 className="text-lg font-semibold text-slate-900">Products</h2>
+        <h2 className="text-lg font-semibold text-slate-900">Товари</h2>
         <button className="rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-600 hover:border-slate-300">
-          View all
+          Переглянути все
         </button>
       </div>
       <div className="mt-4 overflow-hidden rounded-xl border border-slate-100">
         <table className="w-full text-left text-sm">
           <thead className="bg-slate-50 text-xs uppercase tracking-wide text-slate-500">
             <tr>
-              <th className="px-4 py-3">Product</th>
-              <th className="px-4 py-3 text-right">Cost Price</th>
-              <th className="px-4 py-3 text-right">Selling Price</th>
-              <th className="px-4 py-3 text-right">Margin %</th>
+              <th className="px-4 py-3">Товар</th>
+              <th className="px-4 py-3 text-right">Ціна закупівлі</th>
+              <th className="px-4 py-3 text-right">Ціна продажу</th>
+              <th className="px-4 py-3 text-right">Маржа %</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100">

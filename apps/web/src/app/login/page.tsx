@@ -46,7 +46,7 @@ export default function LoginPage() {
 
       const data = await response.json();
       if (!response.ok) {
-        setError(data?.error ?? 'Unable to authenticate.');
+        setError(data?.error ?? 'Не вдалося виконати автентифікацію.');
         setIsSubmitting(false);
         return;
       }
@@ -57,7 +57,7 @@ export default function LoginPage() {
 
       router.replace('/');
     } catch (err) {
-      setError('Something went wrong. Please try again.');
+      setError('Сталася помилка. Спробуйте ще раз.');
       setIsSubmitting(false);
     }
   };
@@ -67,30 +67,30 @@ export default function LoginPage() {
       <div className="w-full max-w-md rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">Commerce Hub</p>
         <h1 className="mt-4 text-2xl font-semibold text-slate-900">
-          {mode === 'signup' ? 'Create your account' : 'Welcome back'}
+          {mode === 'signup' ? 'Створіть акаунт' : 'З поверненням'}
         </h1>
         <p className="mt-2 text-sm text-slate-500">
           {mode === 'signup'
-            ? 'Start monitoring your revenue in minutes.'
-            : 'Log in to review your financial performance.'}
+            ? 'Почніть відстежувати дохід за кілька хвилин.'
+            : 'Увійдіть, щоб переглянути фінансові показники.'}
         </p>
 
         <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
           {mode === 'signup' && (
             <label className="block text-sm font-medium text-slate-600">
-              Full name
+              Повне ім'я
               <input
                 name="name"
                 value={form.name}
                 onChange={handleChange}
                 required
                 className="mt-2 w-full rounded-xl border border-slate-200 px-4 py-2 text-sm text-slate-900 focus:border-brand-500 focus:outline-none"
-                placeholder="Avery Powell"
+                placeholder="Іван Петренко"
               />
             </label>
           )}
           <label className="block text-sm font-medium text-slate-600">
-            Email
+            Електронна пошта
             <input
               type="email"
               name="email"
@@ -102,7 +102,7 @@ export default function LoginPage() {
             />
           </label>
           <label className="block text-sm font-medium text-slate-600">
-            Password
+            Пароль
             <input
               type="password"
               name="password"
@@ -122,12 +122,12 @@ export default function LoginPage() {
             disabled={isSubmitting}
             className="w-full rounded-full bg-brand-500 px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-600 disabled:cursor-not-allowed disabled:bg-brand-300"
           >
-            {isSubmitting ? 'Working…' : mode === 'signup' ? 'Create account' : 'Sign in'}
+            {isSubmitting ? 'Зачекайте…' : mode === 'signup' ? 'Створити акаунт' : 'Увійти'}
           </button>
         </form>
 
         <div className="mt-6 text-center text-sm text-slate-500">
-          {mode === 'signup' ? 'Already have an account?' : 'New to Commerce Hub?'}{' '}
+          {mode === 'signup' ? 'Вже маєте акаунт?' : 'Вперше в Commerce Hub?'}{' '}
           <button
             type="button"
             onClick={() => {
@@ -136,13 +136,13 @@ export default function LoginPage() {
             }}
             className="font-semibold text-brand-500"
           >
-            {mode === 'signup' ? 'Sign in' : 'Create one'}
+            {mode === 'signup' ? 'Увійти' : 'Створити'}
           </button>
         </div>
 
         <div className="mt-6 rounded-2xl bg-slate-50 p-4 text-xs text-slate-500">
-          <p className="font-semibold text-slate-700">Demo access</p>
-          <p className="mt-2">Use a seeded account like avery@example.com with password123.</p>
+          <p className="font-semibold text-slate-700">Демо-доступ</p>
+          <p className="mt-2">Використайте акаунт avery@example.com з паролем password123.</p>
         </div>
       </div>
     </main>

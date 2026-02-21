@@ -34,7 +34,7 @@ export function AuthShell({ children }: { children: React.ReactNode }) {
   if (!isReady) {
     return (
       <div className="flex min-h-screen items-center justify-center text-sm text-slate-500">
-        Loading…
+        Завантаження…
       </div>
     );
   }

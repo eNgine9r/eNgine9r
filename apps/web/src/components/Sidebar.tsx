@@ -1,11 +1,11 @@
 import Link from 'next/link';
 
 const links = [
-  { href: '/', label: 'Dashboard' },
-  { href: '/orders', label: 'Orders' },
-  { href: '/products', label: 'Products' },
-  { href: '/advertising', label: 'Advertising' },
-  { href: '/expenses', label: 'Expenses' }
+  { href: '/', label: 'Дашборд' },
+  { href: '/orders', label: 'Замовлення' },
+  { href: '/products', label: 'Товари' },
+  { href: '/advertising', label: 'Реклама' },
+  { href: '/expenses', label: 'Витрати' }
 ];
 
 export function Sidebar() {
@@ -27,8 +27,8 @@ export function Sidebar() {
         ))}
       </nav>
       <div className="rounded-2xl bg-slate-50 p-4 text-sm text-slate-500">
-        <p className="font-semibold text-slate-700">Next steps</p>
-        <p className="mt-2">Connect your data sources to replace the mock modules.</p>
+        <p className="font-semibold text-slate-700">Наступні кроки</p>
+        <p className="mt-2">Підключіть джерела даних, щоб замінити тестові модулі.</p>
       </div>
     </aside>
   );

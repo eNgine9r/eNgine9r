@@ -23,7 +23,7 @@ export function ExpenseList({
           >
             <div>
               <p className="text-sm font-semibold text-slate-700">{expense.category}</p>
-              <p className="text-xs text-slate-400">Owner: {expense.owner}</p>
+              <p className="text-xs text-slate-400">Відповідальний: {expense.owner}</p>
             </div>
             <p className="text-sm font-semibold text-slate-900">{expense.amount}</p>
           </li>

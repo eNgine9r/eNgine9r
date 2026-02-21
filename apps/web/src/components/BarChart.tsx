@@ -7,7 +7,7 @@ export function BarChart({ title, data }: { title: string; data: ChannelSpend[] 
     <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
       <div className="flex items-center justify-between">
         <h2 className="text-lg font-semibold text-slate-900">{title}</h2>
-        <span className="text-xs font-semibold text-slate-400">Last 30 days</span>
+        <span className="text-xs font-semibold text-slate-400">Останні 30 днів</span>
       </div>
       <div className="mt-6 space-y-4">
         {data.map((item) => {

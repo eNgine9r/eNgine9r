@@ -6,7 +6,7 @@ import { dashboardMetrics, products } from '@/lib/mock-data';
 export default function ProductsPage() {
   return (
     <main>
-      <TopBar title="Products" subtitle="Keep inventory and pricing aligned." />
+      <TopBar title="Товари" subtitle="Тримайте залишки та ціни під контролем." />
       <div className="space-y-6 px-6 py-6 lg:px-10">
         <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {dashboardMetrics.map((metric) => (
