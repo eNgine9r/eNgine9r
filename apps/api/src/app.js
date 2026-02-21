@@ -3,8 +3,14 @@ const cors = require("cors");
 const routes = require("./routes");
 
 const app = express();
+const corsOrigin = process.env.CORS_ORIGIN;
+const corsOptions = corsOrigin
+  ? {
+      origin: corsOrigin.split(",").map((value) => value.trim())
+    }
+  : undefined;
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.get("/health", (req, res) => {
