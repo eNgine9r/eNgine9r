@@ -1,6 +1,6 @@
 const [repoOwner = "", repoName = ""] = (process.env.GITHUB_REPOSITORY || "").split("/");
-const isUserPagesRepo = repoOwner.toLowerCase() === repoName.toLowerCase();
-const shouldUseBasePath = process.env.GITHUB_ACTIONS === "true" && repoName && !isUserPagesRepo;
+const isRootPagesRepo = repoName.toLowerCase() === `${repoOwner.toLowerCase()}.github.io`;
+const shouldUseBasePath = process.env.GITHUB_ACTIONS === "true" && repoName && !isRootPagesRepo;
 const basePath = shouldUseBasePath ? `/${repoName}` : "";
 
 /** @type {import('next').NextConfig} */
