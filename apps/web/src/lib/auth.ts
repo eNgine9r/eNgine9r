@@ -1,4 +1,6 @@
 const TOKEN_KEY = 'engine9r_auth_token';
+const rawBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+const basePath = rawBasePath && rawBasePath !== '/' ? rawBasePath.replace(/\/+$/, '') : '';
 
 export const getAuthToken = () => {
   if (typeof window === 'undefined') {
@@ -22,6 +24,11 @@ export const clearAuthToken = () => {
   }
 
   window.localStorage.removeItem(TOKEN_KEY);
+};
+
+export const withBasePath = (path: string) => {
+  const normalizedPath = path.startsWith('/') ? path : `/${path}`;
+  return `${basePath}${normalizedPath}` || '/';
 };
 
 export const getApiBaseUrl = () =>

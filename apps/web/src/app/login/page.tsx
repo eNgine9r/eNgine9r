@@ -1,8 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
-import { getApiBaseUrl, setAuthToken } from '@/lib/auth';
+import { getApiBaseUrl, setAuthToken, withBasePath } from '@/lib/auth';
 
 const initialForm = {
   name: '',
@@ -11,7 +10,6 @@ const initialForm = {
 };
 
 export default function LoginPage() {
-  const router = useRouter();
   const [mode, setMode] = useState<'login' | 'signup'>('login');
   const [form, setForm] = useState(initialForm);
   const [error, setError] = useState('');
@@ -55,7 +53,7 @@ export default function LoginPage() {
         setAuthToken(data.token);
       }
 
-      router.replace('/');
+      window.location.replace(withBasePath('/'));
     } catch (err) {
       setError('Сталася помилка. Спробуйте ще раз.');
       setIsSubmitting(false);

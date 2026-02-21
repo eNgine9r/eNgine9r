@@ -1,41 +1,50 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
-import { usePathname, useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import { Sidebar } from '@/components/Sidebar';
-import { getAuthToken } from '@/lib/auth';
+import { getAuthToken, withBasePath } from '@/lib/auth';
 
-const PUBLIC_ROUTES = ['/login'];
 const isDemoMode = process.env.NEXT_PUBLIC_DEMO_MODE === 'true';
+const normalizePath = (path: string) => {
+  if (!path) {
+    return '/';
+  }
+
+  const trimmed = path.replace(/\/+$/, '');
+  return trimmed || '/';
+};
 
 export function AuthShell({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname();
-  const router = useRouter();
   const [isReady, setIsReady] = useState(false);
-  const isPublicRoute = useMemo(() => PUBLIC_ROUTES.includes(pathname), [pathname]);
+  const [isPublicRoute, setIsPublicRoute] = useState(false);
 
   useEffect(() => {
+    const currentPath = normalizePath(window.location.pathname);
+    const loginPath = normalizePath(withBasePath('/login'));
+    const homePath = withBasePath('/');
+    const publicRoute = currentPath === loginPath;
+
     if (isDemoMode) {
+      setIsPublicRoute(publicRoute);
       setIsReady(true);
       return;
     }
 
     const token = getAuthToken();
 
-    if (!token && !isPublicRoute) {
-      router.replace('/login');
-      setIsReady(true);
+    if (!token && !publicRoute) {
+      window.location.replace(loginPath);
       return;
     }
 
-    if (token && isPublicRoute) {
-      router.replace('/');
-      setIsReady(true);
+    if (token && publicRoute) {
+      window.location.replace(homePath);
       return;
     }
 
+    setIsPublicRoute(publicRoute);
     setIsReady(true);
-  }, [isPublicRoute, router]);
+  }, []);
 
   if (!isReady) {
     return (
