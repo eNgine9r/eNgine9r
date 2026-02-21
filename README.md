@@ -1,12 +1,41 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=1&pause=1000&color=FF6A3F&center=true&vCenter=true&width=435&height=30&lines=Hi+there%F0%9F%91%8BI'm+Serhii)](https://git.io/typing-svg)
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&duration=2000&pause=1000&color=FF6A3F&center=true&vCenter=true&width=650&height=20&lines=Fullstack+developer+with+1%2B+year+of+experience;I+am+studying+at+the+best+IT+school+of+Ukraine+%22GOIT%22;While+you+are+reading+these+messages%2C+I+am+learning%F0%9F%98%89)](https://git.io/typing-svg)
+# eNgine9r Commerce Hub
 
-<table>
-  <tr>
-    <td>
-      <img align="center" src="/github-metrics.svg" alt="Metrics" width="400"></img>
-    </td>
-  </tr>
-</table>
+Monorepo with two applications:
+- `apps/web` - Next.js dashboard UI
+- `apps/api` - Express + SQLite API
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=eNgine9r&theme=dracula&hide_border=true&fire=EB5454&background=45%2CEB5454%2C3C00EB&border=EB3756)](https://git.io/streak-stats)
+## Live Web Version
+
+- GitHub Pages: https://engine9r.github.io/
+
+After each push to `main` (changes in `apps/web/**`), GitHub Actions deploys the web app automatically.
+
+## Repository Structure
+
+`apps/web`
+- Frontend application (Next.js 14, React 18, Tailwind CSS)
+
+`apps/api`
+- Backend application (Express + SQLite)
+- Runtime database files are stored in `apps/api/data` (ignored by git)
+
+## Local Run
+
+API:
+```bash
+cd apps/api
+npm install
+npm run dev
+```
+
+WEB:
+```bash
+cd apps/web
+npm install
+npm run dev
+```
+
+Optional env for frontend:
+```bash
+NEXT_PUBLIC_API_BASE_URL=http://localhost:4000/api
+```

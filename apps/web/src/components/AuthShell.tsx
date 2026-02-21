@@ -6,6 +6,7 @@ import { Sidebar } from '@/components/Sidebar';
 import { getAuthToken } from '@/lib/auth';
 
 const PUBLIC_ROUTES = ['/login'];
+const isDemoMode = process.env.NEXT_PUBLIC_DEMO_MODE === 'true';
 
 export function AuthShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -14,6 +15,11 @@ export function AuthShell({ children }: { children: React.ReactNode }) {
   const isPublicRoute = useMemo(() => PUBLIC_ROUTES.includes(pathname), [pathname]);
 
   useEffect(() => {
+    if (isDemoMode) {
+      setIsReady(true);
+      return;
+    }
+
     const token = getAuthToken();
 
     if (!token && !isPublicRoute) {
