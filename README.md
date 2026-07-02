@@ -1,8 +1,7 @@
 # Sellora — CRM/ERP for Instagram Shops
 
 <p align="center">
-  <img src="<img width="46" height="46" alt="image" src="https://github.com/user-attachments/assets/6990f043-a30f-4712-9061-2ee694f8b838" />
-" alt="Sellora Logo" width="160" />
+  <img src="./assets/sellora-logo.png" alt="Sellora Logo" width="160" />
 </p>
 
 <p align="center">
