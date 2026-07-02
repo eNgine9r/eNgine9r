@@ -1,7 +1,7 @@
 # Sellora
 
 <p align="center">
-  <img src="./assets/sellora-logo.png" alt="Sellora" width="180" />
+  <img src="./assets/sellora-logo.svg" alt="Sellora" width="180" />
 </p>
 
 <p align="center">
