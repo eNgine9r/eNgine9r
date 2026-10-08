@@ -1,201 +1,93 @@
-# Sellora
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/profile/hero-mobile.svg" />
+  <img src="./assets/profile/hero.svg" alt="Serhii — Engineer and product builder. Engineering ideas. Building reality. Connected hardware, intelligent software and thoughtful product experiences." width="100%" />
+</picture>
 
-<p align="center">
-  <img src="./assets/sellora-logo.svg" alt="Sellora" width="180" />
-</p>
+**Automation & IoT Engineer · Technical Product Owner**
 
-<p align="center">
-  <strong>A modern CRM/ERP workspace for Instagram-first commerce.</strong>
-</p>
+I turn complex engineering into useful products — from laboratory telemetry and AI orchestration to Linux desktop experiences and commerce software.
 
-<p align="center">
-  From Direct messages to orders, shipments, profit and repeat sales — beautifully connected.
-</p>
+[Connect on LinkedIn ↗](https://www.linkedin.com/in/serhii-tymchuk) · [Explore repositories ↗](https://github.com/eNgine9r?tab=repositories)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Product-SaaS%20CRM-111827?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Focus-Instagram%20Shops-E1306C?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Market-Ukraine-0057B7?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-MVP%20in%20progress-F59E0B?style=for-the-badge" />
-</p>
+## Selected work
 
----
-
-<p align="center">
-  <img src="./assets/screenshots/sellora-hero.png" alt="Sellora Dashboard Preview" width="100%" />
-</p>
-
----
-
-## The Idea
-
-Sellora is being built for a new generation of small e-commerce businesses — stores that sell through Instagram, manage customers in Direct, ship with delivery services, track ads manually and still want to understand their real profit.
-
-Not another heavy CRM.
-
-Not another spreadsheet.
-
-A clean operating system for Instagram shops.
-
-```mermaid
-flowchart LR
-    A[Instagram Direct] --> B[Lead]
-    B --> C[Customer]
-    C --> D[Order]
-    D --> E[Shipment]
-    E --> F[Profit]
-    F --> G[Repeat Sale]
-```
-
----
-
-## What Sellora Connects
+Hardware ↔ Software ↔ Experience
 
 <table>
   <tr>
-    <td align="center" width="25%">
-      <strong>Leads</strong><br/>
-      Direct requests, sources, statuses
+    <td width="50%" valign="top">
+      <a href="https://github.com/eNgine9r/nexolab-platform">
+        <picture>
+          <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/profile/nexolab-mobile-dark.svg" />
+          <source media="(max-width: 600px)" srcset="./assets/profile/nexolab-mobile-light.svg" />
+          <source media="(prefers-color-scheme: dark)" srcset="./assets/profile/nexolab-dark.svg" />
+          <img src="./assets/profile/nexolab-light.svg" alt="NEXOLAB — Industrial IoT for laboratory and refrigeration telemetry: edge acquisition, live dashboards and historical data. Modbus, MQTT, FastAPI and PostgreSQL. Explore the repository." width="100%" />
+        </picture>
+      </a>
     </td>
-    <td align="center" width="25%">
-      <strong>Orders</strong><br/>
-      Sales flow, payments, profit
-    </td>
-    <td align="center" width="25%">
-      <strong>Products</strong><br/>
-      Catalog, variants, stock
-    </td>
-    <td align="center" width="25%">
-      <strong>Advertising</strong><br/>
-      Spend, ROAS, CPA, results
+    <td width="50%" valign="top">
+      <picture>
+        <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/profile/nexus-mobile-dark.svg" />
+        <source media="(max-width: 600px)" srcset="./assets/profile/nexus-mobile-light.svg" />
+        <source media="(prefers-color-scheme: dark)" srcset="./assets/profile/nexus-dark.svg" />
+        <img src="./assets/profile/nexus-light.svg" alt="NEXUS AI — AI orchestration and Commander workflows connecting development projects, agents and devices. MCP, Linux and Raspberry Pi. Private project." width="100%" />
+      </picture>
     </td>
   </tr>
   <tr>
-    <td align="center">
-      <strong>Customers</strong><br/>
-      History, notes, repeat sales
+    <td width="50%" valign="top">
+      <a href="https://github.com/eNgine9r/omaux">
+        <picture>
+          <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/profile/omaux-mobile-dark.svg" />
+          <source media="(max-width: 600px)" srcset="./assets/profile/omaux-mobile-light.svg" />
+          <source media="(prefers-color-scheme: dark)" srcset="./assets/profile/omaux-dark.svg" />
+          <img src="./assets/profile/omaux-light.svg" alt="OmaUX — A refined Omarchy desktop: Dock, live window previews and minimize/restore for Hyprland. QML and Quickshell. Alpha. Explore the repository." width="100%" />
+        </picture>
+      </a>
     </td>
-    <td align="center">
-      <strong>Shipments</strong><br/>
-      Delivery workflow foundation
-    </td>
-    <td align="center">
-      <strong>Finance</strong><br/>
-      Revenue, costs, margin
-    </td>
-    <td align="center">
-      <strong>Analytics</strong><br/>
-      Decisions, not just charts
+    <td width="50%" valign="top">
+      <a href="https://github.com/eNgine9r/sellora">
+        <picture>
+          <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/profile/sellora-mobile-dark.svg" />
+          <source media="(max-width: 600px)" srcset="./assets/profile/sellora-mobile-light.svg" />
+          <source media="(prefers-color-scheme: dark)" srcset="./assets/profile/sellora-dark.svg" />
+          <img src="./assets/profile/sellora-light.svg" alt="Sellora — A CRM platform for Instagram commerce, with workspaces, role-based access and structured workflows. Next.js, FastAPI and PostgreSQL. In development. Explore the repository." width="100%" />
+        </picture>
+      </a>
     </td>
   </tr>
 </table>
 
----
+**More engineering:** [Project Autopilot ↗](https://github.com/eNgine9r/chatgpt-autopilot) — development supervision · [Door Test Controller ↗](https://github.com/eNgine9r/lab_test_ref_door_iso23953) — laboratory test automation.
 
-## Product Feel
+<details>
+<summary>Project index — descriptions and links</summary>
 
-Sellora is designed to feel like a modern SaaS product:
+- **[NEXOLAB](https://github.com/eNgine9r/nexolab-platform)** — An industrial IoT platform for laboratory and refrigeration monitoring. Connects Modbus edge acquisition, MQTT transport, PostgreSQL history and live dashboards.
+- **NEXUS AI** — A private project for AI orchestration and Commander workflows across development projects and devices.
+- **[OmaUX](https://github.com/eNgine9r/omaux)** — A modular desktop UX pack for Omarchy and Hyprland, with a Dock, live window previews, persistent app pinning and minimize/restore workflows. In alpha development.
+- **[Sellora](https://github.com/eNgine9r/sellora)** — A CRM platform in development for Instagram commerce, built around workspaces, role-based access and structured business workflows.
+- **[Project Autopilot](https://github.com/eNgine9r/chatgpt-autopilot)** — A supervisor for development projects, persistent sessions and intervention alerts.
+- **[Door Test Controller](https://github.com/eNgine9r/lab_test_ref_door_iso23953)** — Raspberry Pi automation of refrigeration door test sequences over RS-485 Modbus RTU.
 
-* fast;
-* clean;
-* mobile-friendly;
-* Ukrainian-first;
-* simple enough for a shop owner;
-* structured enough for a growing team.
+</details>
 
-The main goal is clarity:
+## Across the stack
 
-> What happened today?
-> What needs attention?
-> What actually made profit?
+From signal to interface.
 
----
+`Python` `TypeScript` `React / Next.js` `FastAPI` `PostgreSQL / SQLite` `Docker / Linux` `RS-485 / Modbus` `MQTT / WebSocket` `QML / Hyprland`
 
-## Interface Direction
+<details>
+<summary>How I approach engineering</summary>
 
-<p align="center">
-  <img src="./assets/screenshots/dashboard.png" alt="Dashboard" width="48%" />
-  <img src="./assets/screenshots/orders.png" alt="Orders" width="48%" />
-</p>
+Start with the real workflow. Connect hardware and software through clear interfaces. Make system states visible. Build for maintainability, testability and a useful experience.
 
-<p align="center">
-  <img src="./assets/screenshots/advertising.png" alt="Advertising" width="48%" />
-  <img src="./assets/screenshots/inventory.png" alt="Inventory" width="48%" />
-</p>
+</details>
 
----
+<br />
 
-## Built With
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-111827?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/TypeScript-2563EB?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/FastAPI-059669?style=for-the-badge&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-1E40AF?style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQLAlchemy-991B1B?style=for-the-badge" />
-</p>
-
----
-
-## Under the Hood
-
-The product is built with a SaaS-ready foundation:
-
-```text
-Clean Architecture
-Modular Monolith
-Multi-tenant Workspaces
-RBAC
-Audit Logging
-Soft Delete
-Repository / Service Layers
-Integration-ready Core
-```
-
-Just enough structure to scale.
-
-Not enough chaos to regret it later.
-
----
-
-## The Vision
-
-Sellora is not only about storing orders.
-
-It is about helping small Instagram shops become real, measurable businesses.
-
-A place where every message, order, product, ad campaign and shipment finally speaks the same language.
-
----
-
-## Coming Next
-
-Some things are already in motion.
-
-Some things stay behind the curtain for now.
-
-```text
-Better analytics
-Smarter finance
-Safer integrations
-Mobile-first workflows
-AI-assisted commerce
-```
-
-More soon.
-
----
-
-## Status
-
-Sellora is currently in active MVP development.
-
-The foundation is live, the product is evolving sprint by sprint, and the next focus is turning a working system into a polished SaaS experience.
-
----
-
-<p align="center">
-  <strong>Sellora</strong><br/>
-  From Direct to profit.
-</p>
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/profile/footer-mobile.svg" />
+  <img src="./assets/profile/footer.svg" alt="Make it work. Make it matter. eNgine9r — Engineering and product." width="100%" />
+</picture>
