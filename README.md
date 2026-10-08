@@ -72,6 +72,26 @@ Hardware ↔ Software ↔ Experience
 
 </details>
 
+<!-- engineering-pulse:start -->
+## Engineering pulse
+
+<picture>
+  <source media="(max-width: 600px)" srcset="./assets/activity/commit-city-mobile-f618666b461e.svg" />
+  <img src="./assets/activity/commit-city-f618666b461e.svg" alt="Engineering pulse: 1,440 commits across five public projects over the last 12 weeks. Daily activity shown as an isometric skyline." width="100%" />
+</picture>
+
+<details>
+<summary>Activity scope and updates</summary>
+
+Actual commits across NEXOLAB, OmaUX, Sellora, Project Autopilot and Door Test Controller. All authors; default branches; merge commits included; grouped by committer date in UTC. Private projects are omitted. This is independent of GitHub's contribution graph.
+
+Checked every 15 minutes; GitHub Actions may delay scheduled runs. A new snapshot is published when the counts or date window change. The snapshot time appears in the image. Reload the profile to see published changes.
+
+[Snapshot data](./assets/activity/snapshot.json) · [Update workflow](https://github.com/eNgine9r/eNgine9r/actions/workflows/update-activity.yml)
+
+</details>
+<!-- engineering-pulse:end -->
+
 ## Across the stack
 
 From signal to interface.
