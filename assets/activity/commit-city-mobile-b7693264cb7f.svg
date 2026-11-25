@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="700" height="910" viewBox="0 0 700 910" role="img" aria-labelledby="title desc">
 <title id="title">Engineering pulse — real project commits</title>
-<desc id="desc">1219 commits across five public projects, 67 active days, peak 126 commits per day. 2026-09-03 through 2026-11-25 UTC. Each column represents one day; height is proportional to commit count. All authors, default branches, merge commits included. Snapshot 2026-11-25T13:41:06.323Z.</desc>
+<desc id="desc">1328 commits across five public projects, 69 active days, peak 126 commits per day. 2026-09-03 through 2026-11-25 UTC. Each column represents one day; height is proportional to commit count. All authors, default branches, merge commits included. Snapshot 2026-11-25T22:50:11.235Z.</desc>
 <defs><radialGradient id="back"><stop stop-color="#35224f"/><stop offset="1" stop-color="#110e1b"/></radialGradient><radialGradient id="glow"><stop stop-color="#b27bff" stop-opacity=".24"/><stop offset="1" stop-color="#b27bff" stop-opacity="0"/></radialGradient></defs>
 <rect width="700" height="910" rx="28" fill="url(#back)"/>
 <g font-family="DejaVu Sans,Arial,sans-serif" fill="#f4f0fc">
 <text x="36" y="47" font-size="25" fill="#c7a9e8">eNgine9r / ENGINEERING PULSE</text>
 <text x="36" y="103" font-size="39" >Code becomes a skyline.</text>
 <text x="36" y="146" font-size="26" fill="#d0c3de">2026-09-03 — 2026-11-25 · UTC</text>
-<text x="36" y="216" font-size="49" >1,219</text>
+<text x="36" y="216" font-size="49" >1,328</text>
 <text x="36" y="254" font-size="25" fill="#cbb9dd">commits</text>
-<text x="262" y="216" font-size="49" >67</text>
+<text x="262" y="216" font-size="49" >69</text>
 <text x="262" y="254" font-size="25" fill="#cbb9dd">active days</text>
 <text x="464" y="216" font-size="49" >126</text>
 <text x="464" y="254" font-size="25" fill="#cbb9dd">peak / day</text>
@@ -249,10 +249,10 @@
 <polygon points="372.87,491.38 396.24,483.91 396.24,506.08 372.87,513.56" fill="#4c2b6b"/>
 <polygon points="349.50,483.91 372.87,476.43 396.24,483.91 372.87,491.38" fill="#8353b1"/>
 </g>
-<g><title>2026-10-30: 10 commits</title>
-<polygon points="406.50,496.00 429.87,503.48 429.87,513.56 406.50,506.08" fill="#563479"/>
-<polygon points="429.87,503.48 453.24,496.00 453.24,506.08 429.87,513.56" fill="#4c2b6b"/>
-<polygon points="406.50,496.00 429.87,488.52 453.24,496.00 429.87,503.48" fill="#8353b1"/>
+<g><title>2026-10-30: 38 commits</title>
+<polygon points="406.50,467.78 429.87,475.26 429.87,513.56 406.50,506.08" fill="#7d50ac"/>
+<polygon points="429.87,475.26 453.24,467.78 453.24,506.08 429.87,513.56" fill="#4c2b6b"/>
+<polygon points="406.50,467.78 429.87,460.30 453.24,467.78 429.87,475.26" fill="#b083e4"/>
 </g>
 <g><title>2026-11-05: 21 commits</title>
 <polygon points="463.50,484.91 486.87,492.39 486.87,513.56 463.50,506.08" fill="#563479"/>
@@ -279,10 +279,10 @@
 <polygon points="344.37,509.58 367.74,502.10 367.74,515.20 344.37,522.68" fill="#4c2b6b"/>
 <polygon points="321.00,502.10 344.37,494.62 367.74,502.10 344.37,509.58" fill="#8353b1"/>
 </g>
-<g><title>2026-10-31: 0 commits</title>
-<polygon points="378.00,515.20 401.37,522.68 401.37,522.68 378.00,515.20" fill="#221b2c"/>
-<polygon points="401.37,522.68 424.74,515.20 424.74,515.20 401.37,522.68" fill="#191422"/>
-<polygon points="378.00,515.20 401.37,507.72 424.74,515.20 401.37,522.68" fill="#35283f"/>
+<g><title>2026-10-31: 2 commits</title>
+<polygon points="378.00,513.18 401.37,520.66 401.37,522.68 378.00,515.20" fill="#563479"/>
+<polygon points="401.37,520.66 424.74,513.18 424.74,515.20 401.37,522.68" fill="#4c2b6b"/>
+<polygon points="378.00,513.18 401.37,505.71 424.74,513.18 401.37,520.66" fill="#8353b1"/>
 </g>
 <g><title>2026-11-06: 4 commits</title>
 <polygon points="435.00,511.17 458.37,518.65 458.37,522.68 435.00,515.20" fill="#563479"/>
@@ -309,10 +309,10 @@
 <polygon points="315.87,521.72 339.24,514.24 339.24,524.32 315.87,531.80" fill="#4c2b6b"/>
 <polygon points="292.50,514.24 315.87,506.76 339.24,514.24 315.87,521.72" fill="#8353b1"/>
 </g>
-<g><title>2026-11-01: 0 commits</title>
-<polygon points="349.50,524.32 372.87,531.80 372.87,531.80 349.50,524.32" fill="#221b2c"/>
-<polygon points="372.87,531.80 396.24,524.32 396.24,524.32 372.87,531.80" fill="#191422"/>
-<polygon points="349.50,524.32 372.87,516.84 396.24,524.32 372.87,531.80" fill="#35283f"/>
+<g><title>2026-11-01: 1 commit</title>
+<polygon points="349.50,523.31 372.87,530.79 372.87,531.80 349.50,524.32" fill="#563479"/>
+<polygon points="372.87,530.79 396.24,523.31 396.24,524.32 372.87,531.80" fill="#4c2b6b"/>
+<polygon points="349.50,523.31 372.87,515.83 396.24,523.31 372.87,530.79" fill="#8353b1"/>
 </g>
 <g><title>2026-11-07: 0 commits</title>
 <polygon points="406.50,524.32 429.87,531.80 429.87,531.80 406.50,524.32" fill="#221b2c"/>
@@ -339,10 +339,10 @@
 <polygon points="287.37,530.84 310.74,523.36 310.74,533.44 287.37,540.92" fill="#4c2b6b"/>
 <polygon points="264.00,523.36 287.37,515.88 310.74,523.36 287.37,530.84" fill="#8353b1"/>
 </g>
-<g><title>2026-11-02: 2 commits</title>
-<polygon points="321.00,531.42 344.37,538.90 344.37,540.92 321.00,533.44" fill="#563479"/>
-<polygon points="344.37,538.90 367.74,531.42 367.74,533.44 344.37,540.92" fill="#4c2b6b"/>
-<polygon points="321.00,531.42 344.37,523.95 367.74,531.42 344.37,538.90" fill="#8353b1"/>
+<g><title>2026-11-02: 15 commits</title>
+<polygon points="321.00,518.32 344.37,525.80 344.37,540.92 321.00,533.44" fill="#563479"/>
+<polygon points="344.37,525.80 367.74,518.32 367.74,533.44 344.37,540.92" fill="#4c2b6b"/>
+<polygon points="321.00,518.32 344.37,510.84 367.74,518.32 344.37,525.80" fill="#8353b1"/>
 </g>
 <g><title>2026-11-08: 0 commits</title>
 <polygon points="378.00,533.44 401.37,540.92 401.37,540.92 378.00,533.44" fill="#221b2c"/>
@@ -429,10 +429,10 @@
 <polygon points="401.37,577.40 424.74,569.92 424.74,569.92 401.37,577.40" fill="#191422"/>
 <polygon points="378.00,569.92 401.37,562.44 424.74,569.92 401.37,577.40" fill="#35283f"/>
 </g>
-<g><title>2026-11-25: 50 commits</title>
-<polygon points="349.50,528.64 372.87,536.12 372.87,586.52 349.50,579.04" fill="#7d50ac"/>
-<polygon points="372.87,536.12 396.24,528.64 396.24,579.04 372.87,586.52" fill="#4c2b6b"/>
-<polygon points="349.50,528.64 372.87,521.16 396.24,528.64 372.87,536.12" fill="#b083e4"/>
+<g><title>2026-11-25: 115 commits</title>
+<polygon points="349.50,463.13 372.87,470.61 372.87,586.52 349.50,579.04" fill="#a373d0"/>
+<polygon points="372.87,470.61 396.24,463.13 396.24,579.04 372.87,586.52" fill="#4c2b6b"/>
+<polygon points="349.50,463.13 372.87,455.65 396.24,463.13 372.87,470.61" fill="#d8b4ff"/>
 </g>
 <text x="36" y="622" font-size="26" fill="#cbb9dd">Less</text>
 <rect x="111" y="603" width="17" height="17" rx="3" fill="#35283f"/>
@@ -443,7 +443,7 @@
 <text x="664" y="622" font-size="26" fill="#cbb9dd" text-anchor="end">Older → Today</text>
 <path d="M 36 645 H 664" stroke="#493456" fill="none"/>
 <text x="36" y="697" font-size="27" fill="#cbb9dd">NEXOLAB</text>
-<text x="36" y="738" font-size="33" >790</text>
+<text x="36" y="738" font-size="33" >899</text>
 <text x="251" y="697" font-size="27" fill="#cbb9dd">OmaUX</text>
 <text x="251" y="738" font-size="33" >32</text>
 <text x="466" y="697" font-size="27" fill="#cbb9dd">Sellora</text>
@@ -452,5 +452,5 @@
 <text x="36" y="833" font-size="33" >262</text>
 <text x="251" y="792" font-size="27" fill="#cbb9dd">DoorTest</text>
 <text x="251" y="833" font-size="33" >0</text>
-<text x="36" y="877" font-size="26" fill="#cbb9dd">Snapshot 2026-11-25 13:41 UTC</text>
+<text x="36" y="877" font-size="26" fill="#cbb9dd">Snapshot 2026-11-25 22:50 UTC</text>
 </g></svg>
