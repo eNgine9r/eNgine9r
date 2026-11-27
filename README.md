@@ -76,8 +76,8 @@ Hardware ↔ Software ↔ Experience
 ## Engineering pulse
 
 <picture>
-  <source media="(max-width: 600px)" srcset="./assets/activity/commit-city-mobile-b2b8cf8cb6ad.svg" />
-  <img src="./assets/activity/commit-city-b2b8cf8cb6ad.svg" alt="Engineering pulse: 1,467 commits across five public projects over the last 12 weeks. Daily activity shown as an isometric skyline." width="100%" />
+  <source media="(max-width: 600px)" srcset="./assets/activity/commit-city-mobile-fe4e231afb48.svg" />
+  <img src="./assets/activity/commit-city-fe4e231afb48.svg" alt="Engineering pulse: 1,435 commits across five public projects over the last 12 weeks. Daily activity shown as an isometric skyline." width="100%" />
 </picture>
 
 <details>
